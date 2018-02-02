@@ -116,6 +116,15 @@ class PathHeartBezier : View {
         canvas.drawPath(path,mPaint)
 
 
+
+        mPaint.color = Color.RED
+        mPaint.strokeWidth = 3f
+        mPaint.isAntiAlias = true
+        mPaint.style = Paint.Style.FILL
+        mPaint.textSize=50f
+        val love="小仙女,我爱你"
+        canvas.drawText(love,mDataArray[6]-mPaint.measureText(love)/2,mDataArray[7]-80,mPaint)
+
     }
 
 }
